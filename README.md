@@ -61,6 +61,7 @@ Comprueba si una fecha recibida como parámetro es anterior a la fecha actual.
 
 Sé que algunas clases podrían estar más separadas. Por ejemplo, hacer una clase solo para imprimir por consola y dejar la lógica en otra clase.
 
-También podría hacer mis propias excepciones para controlar mejor algunos errores.
+También podría hacer mis propias excepciones para controlar mejor algunos errores, y hacer tests...
+
 
 Lo tendré en cuenta para futuros proyectos, intentando hacer las clases más específicas y modularizar mejor el código
