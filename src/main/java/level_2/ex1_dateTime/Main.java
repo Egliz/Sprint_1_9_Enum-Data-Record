@@ -7,7 +7,6 @@ import java.time.LocalDateTime;
 public class Main {
     public static void main(String[] args) {
 
-        //TODO Explicar modulacion/especificar en los commits la separacion de paquetes
         LocalDate dateNow = LocalDate.now();
         LocalTime timeNow = LocalTime.now();
         LocalDateTime dateTime = LocalDateTime.now();
