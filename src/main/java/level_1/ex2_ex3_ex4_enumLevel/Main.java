@@ -6,16 +6,16 @@ public class Main {
         Task task1 = new Task(Level.HIGH);
         Task task2 = new Task(Level.MEDIUM);
 
-        //Exercise 2
+        System.out.println("Ex2");//Ex 2
         task1.showDifficultyLevel();
         task2.showDifficultyLevel();
 
-        //Ex3
+        System.out.println("Ex3");//Ex3
         System.out.println(Level.LOW.getColor());
         System.out.println(Level.MEDIUM.getColor());
         System.out.println(Level.HIGH.getColor());
 
-        //Ex4
+        System.out.println("Ex4");
         Level level1 = LevelConverter.stringToEnum("LOW");
         Level level2 = LevelConverter.stringToEnum("HIGH");
         Level invalidLevel = LevelConverter.stringToEnum("INVALID");
