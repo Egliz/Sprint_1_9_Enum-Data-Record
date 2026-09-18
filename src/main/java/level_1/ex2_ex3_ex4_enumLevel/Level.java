@@ -1,4 +1,4 @@
-package level_1.ex2_ex3_enumLevel;
+package level_1.ex2_ex3_ex4_enumLevel;
 
 public enum Level {
     LOW("Green"),
