@@ -1,4 +1,4 @@
-# Enums, Fechas y horas
+# Enum, Data, Record
 
 Este proyecto está centrado en tres temas fundamentales de Java: enums, fechas y horas, y records.
 
@@ -10,7 +10,7 @@ Este proyecto está centrado en tres temas fundamentales de Java: enums, fechas 
 
 ## Estructura del proyecto
 
-El proyecto está organizado en diferentes niveles y ejercicios:
+![Project structure](src/main/resources/images/javaEnumDataRecordFolderStructure.png)
 
 ### Nivel 1 - Enums
 
