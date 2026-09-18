@@ -9,7 +9,8 @@ public class Main {
         LocalDate datePlusDays = dateNow.plusDays(8);
         LocalDate dateMinusMonths = dateNow.minusMonths(5);
 
-        System.out.println("Date now: " + dateNow + " Date plus 8 days: " + datePlusDays + ". Date minus 5 months: " + dateMinusMonths);
+        System.out.println("Date now: " + dateNow + " Date plus 8 days: "
+                + datePlusDays + ". Date minus 5 months: " + dateMinusMonths);
 
     }
 }

@@ -7,15 +7,12 @@ public enum Level {
 
     private String color;
 
-    //Ex3
     Level(String color) {
         this.color = color;
-
     }
 
-    //Ex3
     public String getColor() {
-        return color;
+        return this.color;
     }
 
 }

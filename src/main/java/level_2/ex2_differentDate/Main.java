@@ -10,7 +10,8 @@ public class Main {
         LocalDate date2 = LocalDate.now();
         Period difference = Period.between(date1, date2);
 
-        System.out.println(difference.getYears() + " years. " + difference.getMonths() + " months and " + difference.getDays() + "days.");
+        System.out.println(difference.getYears() + " years. " + difference.getMonths() +
+                " months and " + difference.getDays() + " days.");
 
     }
 }
