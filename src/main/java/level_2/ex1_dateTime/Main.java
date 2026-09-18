@@ -7,12 +7,12 @@ import java.time.LocalDateTime;
 public class Main {
     public static void main(String[] args) {
 
-        LocalDate date = LocalDate.now();
-        LocalTime time = LocalTime.now();
+        LocalDate dateNow = LocalDate.now();
+        LocalTime timeNow = LocalTime.now();
         LocalDateTime dateTime = LocalDateTime.now();
 
-        System.out.println("Date: " + date);
-        System.out.println("Time: " + time);
-        System.out.println("Date and time: " + dateTime);
+        System.out.println("Date: " + dateNow);
+        System.out.println("Time: " + timeNow);
+        System.out.println("Date and timeNow: " + dateTime);
     }
 }
