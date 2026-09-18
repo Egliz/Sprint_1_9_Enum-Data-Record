@@ -1,4 +1,4 @@
-package level_1.ex2_level;
+package level_1.ex2_ex3_enumLevel;
 //Ex2
 public class Task {
 

@@ -1,4 +1,4 @@
-package level_1.ex2_level;
+package level_1.ex2_ex3_enumLevel;
 
 public enum Level {
     LOW("Green"),
@@ -12,8 +12,10 @@ public enum Level {
         this.color = color;
 
     }
+
     //Ex3
-    public String getColor(){
+    public String getColor() {
         return color;
     }
+
 }

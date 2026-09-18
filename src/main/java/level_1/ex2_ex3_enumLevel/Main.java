@@ -1,4 +1,4 @@
-package level_1.ex2_level;
+package level_1.ex2_ex3_enumLevel;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,6 +14,16 @@ public class Main {
         System.out.println(Level.LOW.getColor());
         System.out.println(Level.MEDIUM.getColor());
         System.out.println(Level.HIGH.getColor());
+
+        //Ex4
+        Level level1 = LevelConverter.stringToEnum("LOW");
+        Level level2 = LevelConverter.stringToEnum("HIGH");
+        Level invalidLevel = LevelConverter.stringToEnum("INVALID");
+
+        System.out.println(level1);
+        System.out.println(level2);
+        System.out.println(invalidLevel);
+
 
 
     }
