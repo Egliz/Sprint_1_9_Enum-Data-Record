@@ -8,7 +8,7 @@ public class Task {
         this.level = level;
     }
 
-    public void difficultyLevel() {
+    public void showDifficultyLevel() {
         System.out.print("Difficulty level: ");
         switch (level) {
             case HIGH -> System.out.println("5/5");

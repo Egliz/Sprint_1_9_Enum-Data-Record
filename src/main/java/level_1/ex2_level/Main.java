@@ -6,7 +6,7 @@ public class Main {
         Task task1 = new Task(Level.HIGH);
         Task task2 = new Task(Level.MEDIUM);
 
-        task1.difficultyLevel();
-        task2.difficultyLevel();
+        task1.showDifficultyLevel();
+        task2.showDifficultyLevel();
     }
 }
