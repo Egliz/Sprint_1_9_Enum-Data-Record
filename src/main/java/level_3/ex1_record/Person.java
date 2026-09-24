@@ -3,7 +3,11 @@ package level_3.ex1_record;
 public record Person(String name, int age) {
 
     public String fullName(String surname) {
-        return "My full name is " name + surname;
+        return "My full name is " + name + " " + surname;
+    }
+
+    public boolean legalAge(){
+        return (age >= 18);
     }
 }
 
