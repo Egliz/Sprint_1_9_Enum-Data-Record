@@ -9,6 +9,14 @@ public record Person(String name, int age) {
     public boolean legalAge(){
         return (age >= 18);
     }
+
+    public String lengthName(){
+        if(name.length() <= 5){
+            return "Your name isn't long.";
+        } else {
+            return "Your name is too long";
+        }
+    }
 }
 
 
