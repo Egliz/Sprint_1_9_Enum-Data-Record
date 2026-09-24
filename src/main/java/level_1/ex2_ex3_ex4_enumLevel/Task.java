@@ -11,6 +11,7 @@ public class Task {
     public void showDifficultyLevel() {
         System.out.print("Difficulty level: ");
         switch (level) {
+            //TODO seria imprimir el "atributo" del enum????
             case HIGH -> System.out.println("5/5");
             case MEDIUM -> System.out.println("3/5");
             case LOW ->System.out.println("1/5");

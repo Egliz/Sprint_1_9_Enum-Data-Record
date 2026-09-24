@@ -8,6 +8,8 @@ public class LevelConverter {
         } catch (IllegalArgumentException e) {
             System.out.println("Invalid level: " + value);
             return null;
+            //TODO no poner que retorne null porque entonces quien lo recibe tendria que verificar
+            // que no sea nulo.
         }
     }
 }

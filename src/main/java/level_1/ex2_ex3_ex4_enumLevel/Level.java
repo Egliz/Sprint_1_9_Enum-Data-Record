@@ -6,6 +6,7 @@ public enum Level {
     HIGH("Red");
 
     private String color;
+    //TODO inmutable
 
     Level(String color) {
         this.color = color;
