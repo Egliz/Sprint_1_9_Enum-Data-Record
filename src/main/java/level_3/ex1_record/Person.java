@@ -2,6 +2,16 @@ package level_3.ex1_record;
 
 public record Person(String name, int age) {
 
+    //ex3_constructor
+    public Person {
+        if(age < 0) {
+            throw new IllegalArgumentException("Enter a valid age.");
+        }
+        if(name == null || name.isBlank()) {
+            throw new IllegalArgumentException("Enter a valid name.");
+        }
+    }
+    //ex2_methods
     public String fullName(String surname) {
         return "My full name is " + name + " " + surname;
     }
