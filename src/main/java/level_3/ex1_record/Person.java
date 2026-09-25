@@ -1,8 +1,9 @@
 package level_3.ex1_record;
 
+//ex1_createARecord
 public record Person(String name, int age) {
 
-    //ex3_constructor
+    //ex3_validationInContructor
     public Person {
         if(age < 0) {
             throw new IllegalArgumentException("Enter a valid age.");
@@ -11,7 +12,7 @@ public record Person(String name, int age) {
             throw new IllegalArgumentException("Enter a valid name.");
         }
     }
-    //ex2_methods
+    //ex2_customisedMethods
     public String fullName(String surname) {
         return "My full name is " + name + " " + surname;
     }
@@ -28,11 +29,3 @@ public record Person(String name, int age) {
         }
     }
 }
-
-
-/*
-Afegeix mètodes personalitzats dins d’un record.
-Crea un record amb validació en el constructor (ex: edat no pot ser negativa).
-Crea una llista de Person i filtra-la amb lambdas i streams (ex: mostrar només els majors d’edat).
-Compara un record amb una classe tradicional i comenta les diferències en llegibilitat i utilitat.
- */

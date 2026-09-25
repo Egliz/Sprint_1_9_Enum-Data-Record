@@ -57,7 +57,7 @@ Utiliza `DateTimeFormatter` para mostrar fechas con diferentes formatos.
 
 Comprueba si una fecha recibida como parámetro es anterior a la fecha actual.
 
-## Mejoras futuras
+### Nivel 3 - Records
 
 Sé que algunas clases podrían estar más separadas. Por ejemplo, hacer una clase solo para imprimir por consola y dejar la lógica en otra clase.
 
@@ -65,3 +65,42 @@ También podría hacer mis propias excepciones para controlar mejor algunos erro
 
 
 Lo tendré en cuenta para futuros proyectos, intentando hacer las clases más específicas y modularizar mejor el código
+
+En este ejercicio practico el uso de `records` en Java y sus principales características.
+
+## Ejercicios
+(Los ejercicios 1, 2, 3 y 4 comparten el mismo archivo)
+
+#### 1. CreateARecord
+
+Crea un `record` llamado `Person` con los parametros `name` y `age`, y muestro cómo se instancia.
+
+#### 2. CustomisedMethods
+
+Añade diferentes métodos dentro del `record` para trabajar con sus datos:
+
+* `fullName()` para crear el nombre completo.
+* `legalAge()` para comprobar si la persona es mayor de edad.
+* `lengthName()` para comprobar la longitud del nombre.
+
+### 3. ValidationInConstructor 
+
+Validación en el constructor para evitar que se pueda crear una persona con una edad negativa.
+
+### 4. FilterWithLambdasAndStreams
+
+Crea una lista de objetos `Person` y utiliza lambdas y streams para filtrar las personas que son mayores de edad.
+
+### 5. Record class and traditional class (comparison)
+
+En los `record` podemos definir directamente los parámetros en su declaración. A partir de estos parámetros, se crean automáticamente algunos métodos relacionados con ellos. En el código no los vemos, pero disponemos de ellos.
+
+Los parametros de los `record` son inmutables. Una vez creado el objeto, no podemos modificar sus valores.
+
+En las clases tradicionales, los atributos se tienen que definir desde el principio, seguido de un constructor. En los `record`, el constructor se hace automáticamente y no es visible.
+
+Los `record` ya tienen los métodos `toString()`, `equals()`, `hashCode()` y los métodos para acceder a sus parametros. En las clases tradicionales tenemos que hacer estos métodos.
+
+En las clases tradicionales podemos modificar un dato utilizando los metodos `setters` o poniendo el atributo como público. En los `record` no podemos modificarlos una vez creado el objeto.
+
+Para poder usar las clases tradicionales y los `record`, se instancian de la misma manera, y en el momento de llamar a los métodos también se hace de la misma manera, desde el objeto que se creó.

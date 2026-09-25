@@ -12,14 +12,13 @@ public class Main {
         Person person4 = new Person("Cristiano", 8);
         Person person5 = new Person("Juan", 26);
 
+        System.out.println(person1.fullName("Lopez"));
+        System.out.println(person1.name()+ ", " + person1.lengthName());
+
         List<Person> people = List.of(person1, person2, person3, person4, person5);
         System.out.println(filterPeople(people));
-
-
-        //Crea una llista de Person i filtra-la amb lambdas i streams (ex: mostrar només els majors d’edat).
-
     }
-
+    //ex4_filterWithLambdasAndStreams
     public static List<Person> filterPeople(List<Person> people){
         return people.stream().filter(person -> person.legalAge())
                 .collect(Collectors.toList());
