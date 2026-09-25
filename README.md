@@ -33,7 +33,7 @@ Añade métodos y atributos al enum `Level`, asignando un color diferente a cada
 
 Convierte un `String` a un valor del enum utilizando `valueOf()` y gestiona los valores no válidos.
 
-### Nivel 2 - Fechas y horas
+### Nivel 2 - Dates
 
 Ejercicios centrados en el uso de la API `java.time` para trabajar con fechas y horas.
 
@@ -59,21 +59,13 @@ Comprueba si una fecha recibida como parámetro es anterior a la fecha actual.
 
 ### Nivel 3 - Records
 
-Sé que algunas clases podrían estar más separadas. Por ejemplo, hacer una clase solo para imprimir por consola y dejar la lógica en otra clase.
+En estos ejercicios se practica el uso de `records` y sus principales características.
 
-También podría hacer mis propias excepciones para controlar mejor algunos errores, y hacer tests...
-
-
-Lo tendré en cuenta para futuros proyectos, intentando hacer las clases más específicas y modularizar mejor el código
-
-En este ejercicio practico el uso de `records` en Java y sus principales características.
-
-## Ejercicios
 (Los ejercicios 1, 2, 3 y 4 comparten el mismo archivo)
 
 #### 1. CreateARecord
 
-Crea un `record` llamado `Person` con los parametros `name` y `age`, y muestro cómo se instancia.
+Crea un `record` llamado `Person` con los parametros `name` y `age`, y muestra cómo se instancia.
 
 #### 2. CustomisedMethods
 
@@ -83,15 +75,15 @@ Añade diferentes métodos dentro del `record` para trabajar con sus datos:
 * `legalAge()` para comprobar si la persona es mayor de edad.
 * `lengthName()` para comprobar la longitud del nombre.
 
-### 3. ValidationInConstructor 
+#### 3. ValidationInConstructor 
 
 Validación en el constructor para evitar que se pueda crear una persona con una edad negativa.
 
-### 4. FilterWithLambdasAndStreams
+#### 4. FilterWithLambdasAndStreams
 
 Crea una lista de objetos `Person` y utiliza lambdas y streams para filtrar las personas que son mayores de edad.
 
-### 5. Record class and traditional class (comparison)
+#### 5. Record class and traditional class (comparison)
 
 En los `record` podemos definir directamente los parámetros en su declaración. A partir de estos parámetros, se crean automáticamente algunos métodos relacionados con ellos. En el código no los vemos, pero disponemos de ellos.
 
