@@ -1,15 +1,19 @@
 package level_2.ex6_agenda;
 
+import java.time.LocalDateTime;
+
 public class Main {
-    //hacer una clase agenda que tenga como atributo dia, hora y servicio,
-    /*
-    en la misma clase hacer un metodo que muestre la de los siguientes 15 dias
+    public static void main(String[] args) {
 
-    en el main, hacer varias citas con fechas lejanas y cercana, ponerlas en una lista y esa lista
-    pasarla al metodo que muestra las citas mas proximas
-     */
+        LocalDateTime date1 = LocalDateTime.of(2026, 11, 2, 10, 20);
+        LocalDateTime date2 = LocalDateTime.of(2026, 10, 2, 15, 30);
+        LocalDateTime date3 = LocalDateTime.of(2026, 9, 29, 17, 15);
+        LocalDateTime date4 = LocalDateTime.of(2026, 9, 30, 11, 45);
+
+        Agenda.addAppointment(date1, "Dentist");
+        Agenda.addAppointment(date2, "Hairdresser");
+        Agenda.addAppointment(date3, "Meeting");
+        Agenda.addAppointment(date4, "Optician");
+
+    }
 }
-/*
-
-Crea una agenda amb cites guardades com a LocalDateTime i mostra les pròximes.
- */
