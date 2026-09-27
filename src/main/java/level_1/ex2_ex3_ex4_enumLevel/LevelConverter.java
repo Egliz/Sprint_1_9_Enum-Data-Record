@@ -4,7 +4,5 @@ public class LevelConverter {
 
     public static Level stringToEnum(String value) {
          return Level.valueOf(value);
-            //TODO no poner que retorne null porque entonces quien lo recibe tendria que verificar
-            // que no sea nulo.
-        }
     }
+}
