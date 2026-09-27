@@ -3,7 +3,6 @@ package level_2.ex6_agenda;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 
-
 public class Agenda {
 
     static HashMap<LocalDateTime, String> appointments = new HashMap<>();
@@ -12,7 +11,8 @@ public class Agenda {
         appointments.put(dateTime, service);
     }
 
-
+    public static void showAppointment() {
+        appointments.entrySet().stream().filter(a -> a.getKey().isAfter(LocalDateTime.now()))
+                .forEach(a -> System.out.println(a.getKey() + " - " + a.getValue()));
     }
-
-    //un metodo que muestre las proximas
+}

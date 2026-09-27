@@ -1,6 +1,7 @@
 package level_2.ex6_agenda;
 
 import java.time.LocalDateTime;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,6 +15,8 @@ public class Main {
         Agenda.addAppointment(date2, "Hairdresser");
         Agenda.addAppointment(date3, "Meeting");
         Agenda.addAppointment(date4, "Optician");
+        System.out.println("Scheduled appointments.");
 
+        Agenda.showAppointment();
     }
 }
