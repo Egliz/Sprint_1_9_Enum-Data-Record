@@ -3,7 +3,6 @@ package level_1.ex2_ex3_ex4_enumLevel;
 public class Main {
     public static void main(String[] args) {
 
-
         Task task1 = new Task(Level.HIGH);
         Task task2 = new Task(Level.MEDIUM);
 
@@ -16,11 +15,14 @@ public class Main {
                 + Level.HIGH.getColor());
 
         System.out.println("\nEx4");
-        Level level1 = LevelConverter.stringToEnum("LOW");
-        Level level2 = LevelConverter.stringToEnum("HIGH");
-        Level invalidLevel = LevelConverter.stringToEnum("INVALID");
-
-        System.out.println(level1 + "\n" + level2 + "\n" + invalidLevel);
+        try {
+            Level level1 = LevelConverter.stringToEnum("LOW");
+            Level level2 = LevelConverter.stringToEnum("HIGH");
+            Level invalidLevel = LevelConverter.stringToEnum("INVALID");
+            System.out.println(level1 + "\n" + level2 + "\n" + invalidLevel);
+        } catch (IllegalArgumentException e) {
+            System.out.println("Invalid level");
+        }
 
 
 
