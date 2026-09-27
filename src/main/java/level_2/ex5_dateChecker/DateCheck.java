@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class DateCheck {
 
-    public static boolean beforeToday(LocalDate date) {
-        return date.isBefore(LocalDate.now());
+    public static boolean beforeToday(LocalDate date, LocalDate today) {
+        return date.isBefore(today);
     }
 }

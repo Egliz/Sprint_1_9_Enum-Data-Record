@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
 
         LocalDate date = LocalDate.of(2025, 1, 1);
-        System.out.println(DateCheck.beforeToday(date));
+        LocalDate today = LocalDate.of(2026, 12, 27);
+        System.out.println(DateCheck.beforeToday(date, today));
     }
 }
