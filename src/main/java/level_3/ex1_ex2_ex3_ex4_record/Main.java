@@ -1,4 +1,4 @@
-package level_3.ex1_record;
+package level_3.ex1_ex2_ex3_ex4_record;
 
 import java.util.List;
 import java.util.stream.Collectors;

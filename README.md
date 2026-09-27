@@ -10,7 +10,7 @@ Este proyecto está centrado en tres temas fundamentales de Java: enums, fechas 
 
 ## Estructura del proyecto
 
-![Project structure](src/main/resources/images/javaEnumDataRecordFolderStructure.png)
+![Project structure](src/main/resources/images/javaEnumDataRecordsFolderStructure.png)
 
 ### Nivel 1 - Enums
 

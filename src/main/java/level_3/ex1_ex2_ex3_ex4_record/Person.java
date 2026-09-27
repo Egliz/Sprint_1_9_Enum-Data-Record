@@ -1,4 +1,4 @@
-package level_3.ex1_record;
+package level_3.ex1_ex2_ex3_ex4_record;
 
 //ex1_createARecord
 public record Person(String name, int age) {
