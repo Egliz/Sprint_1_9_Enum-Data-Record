@@ -2,19 +2,13 @@ package level_1.ex2_ex3_ex4_enumLevel;
 //Ex2
 public class Task {
 
-    private Level level;
+    private final Level level;
 
     public Task(Level level) {
         this.level = level;
     }
 
     public void showDifficultyLevel() {
-        System.out.print("Difficulty level: ");
-        switch (level) {
-            //TODO seria imprimir el "atributo" del enum????
-            case HIGH -> System.out.println("5/5");
-            case MEDIUM -> System.out.println("3/5");
-            case LOW ->System.out.println("1/5");
-        }
+            System.out.println("Difficulty level: " + level.getDifficulty() + "/5");
     }
 }
