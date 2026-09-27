@@ -11,7 +11,7 @@ public class Agenda {
         appointments.put(dateTime, service);
     }
 
-    public static void showAppointment() {
+    public static void showUpcomingAppointment() {
         appointments.entrySet().stream().filter(a -> a.getKey().isAfter(LocalDateTime.now()))
                 .forEach(a -> System.out.println(a.getKey() + " - " + a.getValue()));
     }
