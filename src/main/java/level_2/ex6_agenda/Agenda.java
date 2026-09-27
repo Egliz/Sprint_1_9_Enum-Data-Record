@@ -8,6 +8,15 @@ public class Agenda {
     static HashMap<LocalDateTime, String> appointments = new HashMap<>();
 
     public static void addAppointment(LocalDateTime dateTime, String service ){
+
+        if (dateTime == null) {
+            throw new IllegalArgumentException("Appointment date cannot be null");
+        }
+
+        if (service == null) {
+            throw new IllegalArgumentException("Service cannot be null");
+        }
+
         appointments.put(dateTime, service);
     }
 
