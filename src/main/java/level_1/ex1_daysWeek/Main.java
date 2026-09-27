@@ -3,8 +3,9 @@ package level_1.ex1_daysWeek;
 public class Main {
     public static void main(String[] args) {
 
-        DayChecker.checkDay(Day.MONDAY);
-        DayChecker.checkDay(Day.FRIDAY);
-        DayChecker.checkDay(Day.SATURDAY);
+        System.out.println(DayChecker.checkDay(Day.MONDAY));
+        System.out.println(DayChecker.checkDay(Day.FRIDAY));
+        System.out.println(DayChecker.checkDay(Day.SATURDAY));
+
     }
 }

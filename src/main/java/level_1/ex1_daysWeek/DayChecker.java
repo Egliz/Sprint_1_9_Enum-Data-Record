@@ -11,6 +11,10 @@ public class DayChecker {
             case SATURDAY, SUNDAY -> {
                 return "Weekend";
             }
+
+            default -> {
+                return "Invalid day";
+            }
         }
     }
 }
